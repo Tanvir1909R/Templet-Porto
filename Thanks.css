@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+h1:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    animation-name: last;
+    animation-duration: 4s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    visibility:hidden;
+}
+@keyframes last{
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font: 50px;
+        visibility: visible;
+    }
+ }
+body {
+    background: #4d4a4a;
+    color: white;
+    font-family: 'Creepster', cursive;
+    letter-spacing: 3px;
+}
+h1:first-child {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    padding: 0px;
+    margin: 0px;
+    visibility: hidden;
+}
+
+@keyframes first{
+   0%{
+       left: -1000px;
+   }
+   100%{
+       left: 805px;
+       visibility: visible;
+   }
+}
